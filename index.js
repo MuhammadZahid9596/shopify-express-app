@@ -110,7 +110,7 @@ app.get('/shopify/callback',(req,res) => {
                     return res.status (400).send('App already installed on this client.');
                 }
                 else{
-                    
+
                     /**
                      * Validating request to receive access token
                      */
@@ -171,7 +171,6 @@ app.get('/shopify/callback',(req,res) => {
                             "webhook": {
                                 "topic": "orders/create",
                                 "address": "https://yourstocksolution.000webhostapp.com/shopify/orders.php",
-                                // "address": "https://api.joeyco.com/order/create/shopify",
                                 "format": "json",
                                 // "fields": [
                                 //     "id",
